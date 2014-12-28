@@ -139,8 +139,8 @@
       </article>
       {% if page.previous or page.next %}
         <div class="pagination">
-          <a href="{{ page.previous.url }}" class="page-link {% unless page.previous %}disabled{% endunless %}">◀ PREV</a>
-          <a href="{{ page.next.url }}" class="page-link {% unless page.next %}disabled{% endunless %}">NEXT ▶</a>
+          <a href="{{ site.baseurl }}{{ page.previous.url }}" class="page-link {% unless page.previous %}disabled{% endunless %}">◀ PREV</a>
+          <a href="{{ site.baseurl }}{{ page.next.url }}" class="page-link {% unless page.next %}disabled{% endunless %}">NEXT ▶</a>
         </div>
       {% endif %}
     </div>
