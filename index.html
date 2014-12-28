@@ -3,7 +3,7 @@ layout: post
 ---
 
 {% for post in site.posts %}
-  <a href="{{ post.url }}" class="post-link">
+  <a href="{{ site.baseurl }}{{ post.url }}" class="post-link">
     <span class="post-title">{{ post.title }}</span>
     {{ post.content | truncate: 200 }}
   </a>
